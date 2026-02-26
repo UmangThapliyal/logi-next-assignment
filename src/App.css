@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+:root {
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #374151;
+  --color-text-muted: #6b7280;
+  --color-text-dark: #111827;
+
+  --color-bg-white: #ffffff;
+  --color-bg-panel: #f8f9fc;
+  --color-bg-soft: #f5f7fb;
+  --color-bg-chip: #f8fafc;
+  --color-bg-chip-active: #f7faff;
+  --color-bg-stat: #fafbff;
+  --color-bg-footer: #eff2f7;
+  --color-bg-table-head: #e9eef0;
+  --color-bg-row-hover: #fafcff;
+  --color-bg-live-pill: #f6faf8;
+  --color-bg-delivered-pill: #e6f7f1;
+  --color-bg-idle-pill: #eceef2;
+  --color-bg-route-pill: #e9f0ff;
+  --color-bg-speed-pill: #eef0f4;
+
+  --color-border-main: #e5e7eb;
+  --color-border-soft: #d6dbe6;
+  --color-border-divider: #d9dde6;
+  --color-border-banner: #d7dbe5;
+  --color-border-table: #dfe3ea;
+  --color-border-table-soft: #d8e0e6;
+  --color-border-row: #e6e9ef;
+
+  --color-live: #1a9b69;
+  --color-live-strong: #0f9d67;
+  --color-link: #2563eb;
+
+  --color-chip-active: #4986ff;
+  --color-chip-active-text: #2f66f5;
+  --color-chip-text: #2f3642;
+
+  --color-dot-muted: #9ca3af;
+  --color-dot-route: #60a5fa;
+  --color-dot-delivered: #34d399;
+
+  --color-status-idle-text: #4b5563;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  padding: 10px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vehicle-page {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+h3,
+p {
+  margin: 10px;
 }

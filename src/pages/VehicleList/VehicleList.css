@@ -1,0 +1,129 @@
+.vehicle-list-wrap {
+  flex: 1;
+  border: 1px solid var(--color-border-table);
+  background: var(--color-bg-white);
+}
+
+.vehicle-list-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--color-border-table);
+}
+
+.vehicle-list-header h2 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.live-pill {
+  border: 1px solid var(--color-border-table-soft);
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: var(--color-live-strong);
+  background: var(--color-bg-live-pill);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.vehicle-table-scroll {
+  max-height: 760px;
+  overflow-y: auto;
+}
+
+.vehicle-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.vehicle-table thead th:first-child,
+.vehicle-table tbody td:first-child,
+.vehicle-table thead th:nth-child(3),
+.vehicle-table tbody td:nth-child(3),
+.vehicle-table thead th:nth-child(4),
+.vehicle-table tbody td:nth-child(4),
+.vehicle-table thead th:nth-child(6),
+.vehicle-table tbody td:nth-child(6) {
+  width: 90px;
+}
+
+.vehicle-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: left;
+  background: var(--color-bg-table-head);
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--color-border-table-soft);
+  padding: 14px 16px;
+}
+
+.vehicle-table tbody td {
+  border-bottom: 1px solid var(--color-border-row);
+  color: var(--color-text-primary);
+  font-size: 14px;
+  padding: 12px 16px;
+  vertical-align: middle;
+}
+
+.vehicle-table tbody tr:hover {
+  background: var(--color-bg-row-hover);
+}
+
+.vehicle-link-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: var(--color-link);
+  cursor: pointer;
+  text-decoration: none;
+  font: inherit;
+  font-weight: 400;
+}
+
+.vehicle-link-btn:hover {
+  opacity: 1;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.3px;
+}
+
+.status-pill.delivered {
+  color: var(--color-live-strong);
+  background: var(--color-bg-delivered-pill);
+}
+
+.status-pill.idle {
+  color: var(--color-status-idle-text);
+  background: var(--color-bg-idle-pill);
+}
+
+.status-pill.en_route {
+  color: var(--color-link);
+  background: var(--color-bg-route-pill);
+}
+
+.speed-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--color-bg-speed-pill);
+  color: var(--color-text-primary);
+}
